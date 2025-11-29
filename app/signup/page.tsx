@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 // NOTE: Use the direct Express API URL for authentication pages
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 export default function SignupPage() {
     const [email, setEmail] = useState('');

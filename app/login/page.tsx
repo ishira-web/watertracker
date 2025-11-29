@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-const API_URL = "http://localhost:5000/api/auth"; // Your Express Backend URL
+const API_URL = process.env.NEXT_PUBLIC_API_URL // Your Express Backend URL
 
 export default function LoginPage() {
     const [email, setEmail] = useState('');
