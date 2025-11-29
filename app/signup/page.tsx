@@ -27,7 +27,7 @@ export default function SignupPage() {
 
         try {
             // POST request to the backend registration route
-            const response = await axios.post(`${API_URL}/register`, { 
+            const response = await axios.post(`${API_URL}/auth/register`, { 
                 email, 
                 password, 
                 dailyGoal 

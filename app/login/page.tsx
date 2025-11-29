@@ -22,7 +22,7 @@ export default function LoginPage() {
         setError('');
 
         try {
-            const response = await axios.post(`${API_URL}/login`, { email, password });
+            const response = await axios.post(`${API_URL}/auth/login`, { email, password });
             
             // Success: Store JWT token and user data
             localStorage.setItem('token', response.data.token);
