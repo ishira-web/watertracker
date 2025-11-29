@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://watertracker-gid5.onrender.com', // Base URL for your Express API
+    baseURL: 'https://watertracker-gid5.onrender.com', 
 });
 
 // Request interceptor to attach JWT token
